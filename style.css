@@ -1,0 +1,1068 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E9DED4;
+  margin: 0;
+  min-width: 375px;
+}
+
+.t-m-upp {
+  text-transform: uppercase;
+  font-family: 'Merriweather'
+}
+
+.content {
+  color: #313131;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.content-logo {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 2px;
+}
+
+.logo-img {
+  background-image: url("./img/horse.svg");
+  background-repeat: repeat;
+  width: 90px;
+  height: 31.18px;
+  background-size: contain;
+}
+
+.logo-title {
+  font-family: "Golos Text";
+  font-size: 16.65px;
+  font-weight: 700;
+  line-height: 110%;
+  color: #595653;
+  text-transform: uppercase;
+}
+
+.content-heading {
+  width: 542px;
+  position: absolute;
+  left: 190px;
+  top: 0;
+  max-width: 50%;
+  padding-top: 26px;
+
+  z-index: 1000;
+}
+
+.title-heading {
+  margin-top: 62px;
+  font-size: 60px;
+  line-height: 110%;
+}
+
+.info-heading {
+  font-family: "Golos Text";
+  font-size: 18px;
+  line-height: 130%;
+  margin-top: 23px;
+  text-align: center;
+}
+
+.buttons-heading {
+  display: flex;
+  gap: 16px;
+  margin-top: 38px;
+  justify-content: center;
+}
+
+.button-oval {
+  cursor: pointer;
+  width: 263px;
+  height: 72px;
+  padding: 12px;
+  border-radius: 66px;
+  border: solid 2px #1F1F1F;  
+}
+
+.button-oval > span {
+  font-family: "Golos Text";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+  text-align: center;
+  width: 165px;
+  display: inline-block;
+}
+
+.chess-thought {
+  background-color: #1F1F1F;
+  color: #FFFFFF;
+}
+
+.chess-thought:hover {
+  background-color: #FBCE51;
+  color: #1F1F1F;
+}
+
+.tournament {
+  background-color: transparent;
+  color: #1F1F1F;
+}
+
+.tournament:hover  {
+  background-color: #1F1F1F;
+  color: #FFFFFF;
+}
+
+.content-city {
+  position: relative;
+  width: 1603px;
+  height: 700px;
+  overflow: hidden;
+}
+
+.content-bg {
+  position: relative;
+  width: 1921px; 
+  height: 700px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bg-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ta-center {
+  text-align: center 
+}
+
+.ta-right {
+  text-align: right 
+}
+
+.content-line-parent {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  max-width: 2316px; /* максимальная длина содержимого */
+  background-color: #F54932;
+  overflow: hidden;
+}
+
+.content-line {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  transform: translateX(0%);
+  white-space: nowrap;
+  color: #FFFFFF;
+  display: flex;
+  gap: 12px;
+  font-size: 22px;
+  line-height: 110%;
+  align-items: center;
+  padding: 18px 12px 18px 12px;
+}
+
+.line-circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+.chess-line {
+  display: flex;
+  font-size: 36px;
+  line-height: 135%;
+}
+
+.chess-line.line1 {
+  margin-top: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chess-line.line1 .t-m-upp {
+  max-width: 764px;
+}
+
+.chess-line.line2 {
+  margin-top: 56px;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.left-path-line2 {
+  width: 502px;
+  height: 527px;
+  position: relative;
+}
+
+.left-path-line2 .chess2 {
+  position: absolute;
+  left: calc(50% - 14px);
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.right-path-line2 {
+  padding-top: 8px;
+}
+
+.right-path-line2 .t-m-upp {
+  max-width: 704px;
+}
+
+.content-body {
+  width: 100%;
+  max-width: 1603px;
+  background-color: #FFFFFF;
+  padding: 0 72px;
+}
+
+.c-mark {
+  color: #F54932;
+  letter-spacing: 0.5px;
+}
+
+.chess1 {
+  width: 394px;
+  height: 250px;
+  background-image: url("./img/chess1.png");
+  min-width: 335px;
+  min-height: 212.56px
+}
+
+.chess2 {
+  width: 530px;
+  height: 568px;
+  background-image: url("./img/chess2.png");
+  max-width: calc(100% + 28px);
+}
+
+.upper-chess2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("./img/upper-chess2.png");
+  width: 528px;
+  height: 609px;
+  mix-blend-mode: color-burn;
+}
+
+.chess-poster {
+  margin-top: 61px;
+  font-family: "Golos Text";
+  font-size: 20px;
+  line-height: 120%;
+  text-align: left;
+}
+
+.poster-line {
+  border-top: 2px solid #D0D0D0;
+  display: flex;
+}
+
+.poster-line-right {
+  border-left: 2px solid #D0D0D0;
+}
+
+.poster-line-left {
+  opacity: 0.7;
+}
+
+.poster-line-left {
+  width: 306px;
+}
+
+.poster-line-right {
+  padding-left: 14px;
+  font-weight: 600;
+}
+
+.poster-line-left,
+.poster-line-right {
+  padding-top: 14px;
+  padding-bottom: 16px;
+}
+
+.poster-line:first-child .poster-line-left,
+.poster-line:first-child .poster-line-right {
+  padding-top: 0;
+}
+
+.poster-line:first-child {
+  border-width: 0;
+}
+
+.poster-info {
+  color: #3057A2;
+  margin-top: 32px;
+}
+
+.s-line-through {
+  position: relative;
+  margin-right: 6px;
+}
+
+.s-line-through::after {
+  content: '';
+  width: calc(100% + 4px);
+  height: 2px;
+  background-color: #F54932;
+  position: absolute;
+  left: -4px;
+  top: 50%
+}
+
+.stages {
+  margin-top: 200px;
+}
+
+.stages-line2 {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.stages-title {
+  font-size: 54px;
+  line-height: 120%;
+}
+
+.stages-info {
+  max-width: 280px;
+  color: #3057A2;
+  font-family: "Golos Text";
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.stages-items {
+  position: relative;
+  display: grid;
+  row-gap: 16px;
+  column-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  margin-top: 150px;
+}
+
+.stages-item {
+  position: relative;
+  background-image: url("./img/stages-fon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  font-family: "Golos Text";
+  font-size: 20px;
+  line-height: 120%;
+
+  padding: 22px 22px 22px 72px;
+}
+
+.upper-stages-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("./img/upper-stages.png");
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: color-burn;
+  background-repeat: repeat;
+}
+
+.stages-item__ind {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  font-weight: 600;
+  background-color: #FFFFFF;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+}
+
+.gc-2 {
+  grid-column: span 2;
+}
+
+.gr-2 {
+  grid-row: span 2;
+}
+
+.p-for-palne {
+  padding-right: 294px;
+}
+
+.plane {
+  background-image: url("./img/plane.png");
+  width: 401px;
+  height: 235px;
+}
+
+.stages-items .plane {
+  position: absolute;
+  bottom: 0;
+  right: -64px;
+}
+
+.participants {
+  margin-top: 198px;
+  overflow: hidden;
+}
+
+.participants-title-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.participants-title {
+  float: left;
+  font-size: 54px;
+  line-height: 120%;
+}
+
+.carusel-lr-buttons {
+  float: right;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.carusel-lr-buttons_mobile {
+  display: none;
+}
+
+.carusel-position {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+
+  font-family: 'Golos Text';
+  font-size: 16px;
+  line-height: 120%;
+
+  cursor: default;
+}
+
+.op-06 {
+  opacity: 0.6;
+}
+
+.carusel-button {
+  position: relative;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: #313131;
+}
+
+.limit-left .carusel-button.left {
+  background-color: #D6D6D6 ;
+  cursor: default;
+}
+
+.limit-right .carusel-button.right {
+  background-color: #D6D6D6 ;
+  cursor: default;
+}
+
+.carusel-button {
+  cursor: pointer;
+}
+
+.carusel-button:hover {
+  background-color: #FBCE51;
+}
+
+.arrow {
+  width: 14px;
+  height: 14px;
+  border-top: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+  position: absolute;
+}
+
+.arrow.left {
+  transform: rotate(-135deg);
+  left: 20px;
+  top: 14px;
+}
+
+.arrow.right {
+  transform: rotate(45deg);
+  left: 12px;
+  top: 14px;
+}
+
+.face {
+  background-image: url("./img/face.png");
+  width: 320px;
+  height: 320px;
+}
+
+.carusel-items {
+  margin-top: 60px;
+  margin-bottom: 142px;
+
+  position: relative;
+  left: 0;
+  transition: left 1s ease;
+
+}
+
+.carusel-item {
+  font-family: "Golos Text";
+  width: 394px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.carusel-items .face {  
+  width: 100%;
+  background-position: center;
+}
+
+.carusel-fio {
+  margin-top: 28px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.carusel-titul {
+  margin-top: 6px;
+  opacity: 0.6;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.carusel-more {
+  margin-top: 18px;
+}
+
+.carusel-more-button {
+  display: inline-block;
+  border: 1px solid #3057A2;
+  color: #3057A2;
+  border-radius: 62px;
+  padding: 7px 12px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+
+  cursor: pointer;
+}
+
+.carusel-more-button:hover {
+  background-color: #3057A2;
+  color: #FFFFFF;
+}
+
+.content-footer {
+  background-color: #E9DED4;
+  font-family: "Golos Text";
+  font-size: 16px;
+  line-height: 120%;
+  padding: 40px 72px 72px 72px;
+  max-width: 1603px;
+}
+
+@media screen and (max-width: 2316px) {
+  .animated-left_right {
+    animation: 30s ease 0s infinite left_right;
+  }
+}
+
+@keyframes left_right {
+  0%, 5% {
+    left: 0%;
+    transform: translateX(0%);
+  }
+  45%, 55% {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  95%, 100% {
+    left: 0%;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes left_right {
+  0%, 5% {
+    left: 0%;
+    transform: translateX(0%);
+  }
+  45%, 55% {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  95%, 100% {
+    left: 0%;
+    transform: translateX(0%);
+  }
+}
+
+.animated-shaking_up_down {
+  animation: 2s linear 0s infinite shaking_up_down;
+}
+
+.delay-one {
+  animation-delay: 1.5s;
+  
+}
+
+.delay-two {
+  animation-delay: 2.5s;
+  animation-duration: 1.5s;
+} 
+
+@keyframes shaking_up_down {
+  0% {
+    transform: translate(0,0);
+  }
+  2.5% {
+    transform: translate(-10px, -1px);
+  }
+  7.5% {
+    transform: translate(10px, -2px);
+  }
+  12.5% {
+    transform: translate(-10px, -3px);
+  }
+  17.5% {
+    transform: translate(10px, -4px);
+  }
+  22.5% {
+    transform: translate(-10px, -5px);
+  }
+  27.5% {
+    transform: translate(10px, -5px);
+  }
+  32.5% {
+    transform: translate(-10px, -4px);
+  }
+  37.5% {
+    transform: translate(10px, -3px);
+  }
+  42.5% {
+    transform: translate(-10px, -2px);
+  }
+  47.5% {
+    transform: translate(10px, -1px);
+  }
+  50%, 100% {
+    transform: translate(0,0);
+  }   
+}
+
+.svg-pawn {
+  transform-origin: 64% 50%;
+}
+
+.animated-move_figure {
+  animation: 3s linear 1s infinite move_figure;
+}
+
+@keyframes move_figure {
+  0%,33%,66%,100% {
+    transform: rotate(0deg);
+  }
+  48%,52% {
+    transform: rotate(-15deg);
+  }
+}
+
+.svg-horse {
+  transform-origin: 64% 50%;
+}
+
+.animated-round_axis {
+  transform: scale(1,1);
+  animation: 5s linear 0.5s infinite round_axis;
+}
+
+@keyframes round_axis {
+  0%,75%,100% {
+    transform: scale(1,1);
+  }
+  25%,50% {
+    transform: scale(-1,1);
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .content-city {
+    width: 100%;
+  }
+
+  .logo-img {
+    width: 80px;
+    height: 28px;
+  }
+
+  .content-heading {
+    left: 2%;
+    max-width: 45%;
+  }
+
+  .title-heading {
+    font-size: 46px;
+  }
+
+  .info-heading {
+    font-size: 16px;
+  }
+
+  .chess-line {
+    font-size: 30px;
+  }
+
+  .chess-line.line1 {
+    margin-top: 60px;
+  }
+
+  .chess-poster {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .poster-line-left {
+    width: 240px;
+    min-width: 240px;
+  }
+
+  .stages {
+    margin-top: 80px;
+  }
+
+  .stages-title {
+    font-size: 42px;
+  }
+
+  .stages-info {
+    font-size: 16px;
+  }
+
+  .stages-items {
+    margin-top: 32px;
+  }
+
+  .stages-item {
+    font-size: 16px;
+  }
+
+  .participants {
+    margin-top: 100px;
+  }
+
+  .carusel-items {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 577px) {
+  .left-path-line2 {
+    display: none;
+  }
+  .info-heading {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .content-heading {
+    width: 100%;
+    max-width: 96%;
+  }
+  .tournament {
+    background-color: #FFFFFF;
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .title-heading {
+    font-size: 36px;
+    margin-top: 40px;
+  }
+  .content-heading {
+    max-width: 100%;
+    width: 100%;
+    padding-top: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    left: 0;
+  }
+
+  .logo-title {
+    font-size: 14.42px;
+  }
+
+  .info-heading {
+    text-align: left;
+    margin-top: 25px;
+    font-size: 18px;
+  }
+
+  .buttons-heading {
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 30px;
+  }
+
+  .button-oval {
+    width: 100%;
+    height: 48px;
+  }
+
+  .button-oval > span {
+    width: auto;
+  }
+
+  .content-city {
+    height: 774px;
+  }
+
+  .content-bg {
+    left: calc(50% - 120px);
+    top: 77px;
+    transform: scale(.52) translateX(-50%);
+    transform-origin: bottom left;
+  }
+
+  .content-body {
+    padding: 0 20px;
+    margin-bottom: 102px;
+  }
+
+  .content-line-parent {
+    height: 38px;
+  }
+
+  .content-line {
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+
+  .chess-line {
+    font-size: 28px;
+    flex-direction: column;
+  }
+
+  .chess-line.line1 {
+    margin-top: 48px;
+  }
+
+  .bg-img.chess1:not(.mobile) {
+    display: none;
+  }
+
+  .bg-img.chess1.mobile {
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 26px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 394/250;
+  }
+
+  .left-path-line2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .chess-line.line2 {
+    margin-top: 58px;
+  }
+
+  .left-path-line2 .chess2 {
+    max-width: calc(100% + 38px);
+    top: -22px;
+    position: relative;
+    transform: translate(0,0);
+    height: auto;
+    aspect-ratio: 530/568;
+    left: -19px;
+  }
+
+  .right-path-line2 {
+    padding-top: 4px;
+    width: 100%;
+  }
+
+  .chess-poster {
+    font-size: 20px;
+    margin-top: 44px;
+  }
+
+  .poster-line {
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .poster-line-left {
+    width: auto;
+    padding-bottom: 12px;
+    padding-top: 16px;
+    padding-right: 12px;
+  }
+
+  .poster-line-right {
+    border-left-width: 0;
+    padding-left: 0;
+    padding-bottom: 14px;
+    padding-top: 0px;
+  }
+
+  .poster-info {
+    margin-top: 24px;
+    font-size: 18px;
+  }
+
+  .stages {
+    margin-top: 118px;
+  }
+
+  .stages-title {
+    font-size: 36px;
+    line-height: 110%;
+  }
+
+  .stages-line2 {
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+  }
+
+  .stages-info {
+    font-size: 18px;
+    min-width: 100%;
+  }
+
+  .stages-items {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    row-gap: 0;
+    margin-top: 150px;
+  }
+  
+  .gr-2_mobile {
+    grid-row: span 2;
+  }
+  .gc-2_mobile {
+    grid-column: span 2;
+  }
+  
+  .stages-item {
+    font-size: 18px;
+    width: 335px;
+    padding-bottom: 36px;
+  }
+
+  .p-for-palne {
+    padding-right: 22px;
+  }
+
+  .up-item {
+    padding-top: 62px;
+    padding-bottom: 8px;
+  }
+  .up-item .stages-item__ind {
+    top: 62px;
+  }
+
+  .plane {
+    background-image: url("./img/plane-mobile.png");
+    width: 335px;
+    height: 182px;
+    top: 196px;
+  }
+
+  .stages-items .plane {
+    top: -129px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .participants {
+    margin-top: 182px;
+  }
+
+  .participants-title {
+    font-size: 36px;
+  }
+
+  .carusel-lr-buttons {
+    display: none;
+  }
+  
+  .carusel-lr-buttons_mobile {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carusel-button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .arrow.left {
+    left: 14px;
+    top: 11px;
+  }
+
+  .arrow.right {
+    left: 8px;
+    top: 11px;
+  }
+
+  .carusel-item {
+    width: 335px;
+  }
+
+  .carusel-items {
+    margin-top: 34px;
+    margin-bottom: 40px;
+  }
+
+  .carusel-items .face {
+    width: 244px;
+    height: 244px;
+    display: inline-block;
+  }
+
+  .carusel-fio {
+    margin-top: 24px;
+  }
+
+  .carusel-titul {
+    margin-top: 9px;
+  }
+
+}
